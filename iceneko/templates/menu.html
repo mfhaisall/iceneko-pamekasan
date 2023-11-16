@@ -1,35 +1,45 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ice neko</title>
+    <title>Kedai Eskrim - Menu</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
-<h2>daftar menu</h2>
 <body>
-    <a href="\iceneko" class="link">Beranda</a>
-    <table border="1" cellspacing="0" cellpadding="7px">
-    <tr>
-        <td>no</td>
-        <td>nama</td>
-        <td>harga</td>
-        </tr>
-    <tr>
-        <td>1</td>
-        <td>moca ice</td>
-        <td>11k</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>moca ice special neko</td>
-        <td>15k</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>ice caramel</td>
-        <td>10k</td>
-    </tr>
-    </table>
-    
+    <header>
+        <h1>Kedai Eskrim</h1>
+        <nav>
+            <ul>
+                <li><a href="/iceneko">Beranda</a></li>
+                <li><a href="/menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <h2>Menu Kami</h2>
+        <div class="menu-item">
+            <img src="{% static 'images/ice_cream1.jpg' %}" alt="Es Krim 1">
+            <h3>Es Krim Vanilla</h3>
+            <p>Rasa vanilla yang lezat</p>
+            <p class="price">Rp 20,000</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="{% static 'images/ice_cream2.jpg' %}" alt="Es Krim 2">
+            <h3>Es Krim Coklat</h3>
+            <p>Rasa coklat yang menggoda</p>
+            <p class="price">Rp 25,000</p>
+        </div>
+        
+        
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kedai Eskrim. Hak Cipta Dilindungi.</p>
+    </footer>
 </body>
 </html>

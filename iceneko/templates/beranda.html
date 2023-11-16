@@ -1,36 +1,36 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ice neko</title>
-    
+    <title>ice neko - Beranda</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"><a href="">ICE NEKO</a></div>
-                <div class="menu">
-                    <ul>
-                       
-                        <li><a href="\menu">menu</a></li>
-                    </ul>
+    <header>
+        <h1>ice neko</h1>
+        <nav>
+            <ul>
+                <li><a href="/iceneko">Beranda</a></li>
+                <li><a href="/menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                </div>
+    <section class="hero">
+        <h2>Selamat Datang di ice neko</h2>
+        <p>Nikmati sensasi es krim lezat kami</p>
+    </section>
 
-            
+    <section class="about">
+        <h2>Tentang Kami</h2>
+        <p>Kedai Eskrim menyajikan berbagai pilihan es krim berkualitas tinggi dengan bahan-bahan terbaik. Datang dan rasakan kelezatan es krim kami!</p>
+    </section>
 
-        </div>
-    </nav>
-    <div class="wrapper">
-      <section id="home">
-    </div>
-
-   <div class="kolom">
-    <p class="deskripsi">menyediakan aneka macam es cream</p>
-    <p class="deskripsi">dapatkan diskon setiap harinya </p>
-    <h2>bersama ice neko</h2>
-    </div>
-    
+    <footer>
+        <p>&copy; 2023 Kedai Eskrim. Hak Cipta Dilindungi.</p>
+    </footer>
 </body>
 </html>

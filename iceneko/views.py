@@ -8,4 +8,6 @@ def iceneko(request):
 def menu(request):
   template = loader.get_template('menu.html')
   return HttpResponse(template.render())
+
+
   
